@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/exchange/MeitY/SRAM/sram_16x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_16x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/exchange/MeitY/SRAM/sram_256x256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_256x256
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/exchange/MeitY/SRAM/tb_sram_256x256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sram_256x256

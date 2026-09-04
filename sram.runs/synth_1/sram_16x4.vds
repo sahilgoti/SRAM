@@ -1,0 +1,247 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 06-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Sep  3 17:00:46 2026
+# Process ID         : 21408
+# Current directory  : D:/exchange/MeitY/SRAM/sram.runs/synth_1
+# Command line       : vivado.exe -log sram_16x4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sram_16x4.tcl
+# Log file           : D:/exchange/MeitY/SRAM/sram.runs/synth_1/sram_16x4.vds
+# Journal file       : D:/exchange/MeitY/SRAM/sram.runs/synth_1\vivado.jou
+# Running On         : COOKIE
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency      : 2096 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 6297 MB
+# Swap memory        : 15063 MB
+# Total Virtual      : 21361 MB
+# Available Virtual  : 3238 MB
+#-----------------------------------------------------------
+source sram_16x4.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 596.906 ; gain = 267.547
+Command: synth_design -top sram_16x4 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6944
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1401.742 ; gain = 578.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sram_16x4' [D:/exchange/MeitY/SRAM/sram_16x4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sram_16x4' (0#1) [D:/exchange/MeitY/SRAM/sram_16x4.v:3]
+WARNING: [Synth 8-7129] Port CE in module sram_16x4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSB in module sram_16x4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1521.141 ; gain = 697.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1521.141 ; gain = 697.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1521.141 ; gain = 697.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1521.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/exchange/MeitY/SRAM/sram_16x4.xdc]
+Finished Parsing XDC File [D:/exchange/MeitY/SRAM/sram_16x4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/exchange/MeitY/SRAM/sram_16x4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sram_16x4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sram_16x4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1565.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1566.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1566.086 ; gain = 742.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1566.086 ; gain = 742.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1566.086 ; gain = 742.492
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'O_reg' [D:/exchange/MeitY/SRAM/sram_16x4.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[15]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[14]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[13]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[12]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[11]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[10]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[9]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[8]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[7]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[6]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[5]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[4]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[3]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[2]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[0]' [D:/exchange/MeitY/SRAM/sram_16x4.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1566.086 ; gain = 742.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port CE in module sram_16x4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CSB in module sram_16x4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1590.789 ; gain = 767.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1745.242 ; gain = 921.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1745.383 ; gain = 921.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1755.016 ; gain = 931.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     1|
+|2     |LUT5  |    16|
+|3     |LUT6  |    16|
+|4     |MUXF7 |     8|
+|5     |MUXF8 |     4|
+|6     |LD    |    68|
+|7     |IBUF  |    10|
+|8     |OBUF  |     4|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 2030.293 ; gain = 1161.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2030.293 ; gain = 1206.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2039.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  LD => LDCE: 68 instances
+
+Synth Design complete | Checksum: 85bb8a3
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+18 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 2043.105 ; gain = 1446.199
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2043.105 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/exchange/MeitY/SRAM/sram.runs/synth_1/sram_16x4.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file sram_16x4_utilization_synth.rpt -pb sram_16x4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 17:02:01 2026...
